@@ -1,0 +1,30 @@
+.bxcompprop-cont-table-r select{
+	overflow: auto;
+
+}
+
+.map-block__bord-footer .mf-ok-text{
+	color:#fff !important;
+}
+.news_title_main{
+	font-family: bold;
+	font-size: 3rem;
+	color: #444;
+}
+
+@media (min-width: 576px) {
+	.news_title_main {
+		font-size: 3.6rem;
+	}
+}
+@media (min-width: 992px) {
+	.news_title_main {
+		font-size: 4.5rem;
+	}
+}
+.grecaptcha-badge{
+	display:none;
+}
+.table_common table tbody td{
+	white-space: normal;
+}

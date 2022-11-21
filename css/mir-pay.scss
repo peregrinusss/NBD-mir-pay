@@ -1,0 +1,476 @@
+@font-face {
+  font-family: 'reg';
+  src: url('../fonts/MuseoSansCyrl-300.eot') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-300.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'l-bold';
+  src: url('../fonts/MuseoSansCyrl-700.eot') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'l-bold-italic';
+  src: url('../fonts/MuseoSansCyrl-700Italic.eot') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl-700Italic.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-700Italic.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-700Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.m {
+  &-h2 {
+    font-size: 50px;
+    line-height: 60px;
+    color: #1A1D1F;
+    font-family: l-bold;
+  }
+  &-text {
+    display: block;
+    font-family: reg;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1A1D1F;
+  }
+}
+
+
+// -------------------- M-INTRO -------------------- 
+.m-intro {
+  margin-bottom: 120px;
+  &__wrap {
+    height: 875px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+  &__right {
+    position: absolute;
+    top: 0;
+    right: -620px;
+    max-width: 1350px;
+  }
+  &__title {
+    font-family: l-bold;
+    font-size: 80px;
+    line-height: 95%;
+    color: #1A1D1F;
+    & span {
+      font-family: l-bold-italic;
+      color: #008452;
+      font-style: italic;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 245px;
+        height: 30px;
+        background: url('/img/line-1.svg') no-repeat;
+        background-size: 245px;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 70px;
+    max-width: 520px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: reg;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background: #0059A4;
+    border-radius: 57px;
+    border: none;
+    padding: 27px;
+    max-width: 270px;
+    cursor: pointer;
+    margin-top: 45px;
+    transition: 0.2s;
+    & svg {
+      margin-left: 15px;
+    }
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgb(0, 89, 164, 0.4);
+      transition: 0.2s;
+    }
+  }
+
+  &__img {
+  }
+
+  &__line-1 {
+    width: 266px;
+    position: absolute;
+    bottom: 150px;
+    left: -20px;
+  }
+
+  &__line-2 {
+    width: 187px;
+    position: absolute;
+    top: 100px;
+    right: 350px;
+  }
+}
+// -------------------- /M-INTRO -------------------- 
+
+// ------------------- M-APP --------------------
+.m-app {
+  margin-bottom: 100px;
+  &__advs {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  &__adv {
+    font-size: 32px;
+    line-height: 38px;
+    font-family: l-bold;
+  }
+
+  &__adv-1 {
+    color: #008452;
+  }
+
+  &__adv-2 {
+    color: #0059A4;
+  }
+
+  &__adv-3 {
+    color: #ED6C14;
+  }
+
+  &__adv-4 {
+    color: #8300D3;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    max-width: 662px;
+    flex-shrink: 0;
+    margin-left: -270px;
+  }
+
+  &__img {
+  }
+
+  &__right {
+    margin-left: 40px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__subtitle {
+  }
+}
+// ------------------- /M-APP --------------------
+
+// ------------------- M-USE --------------------
+.m-use {
+  margin-bottom: 260px;
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  &__card {
+    width: 100%;
+    background: #C9E6FF;
+    border-radius: 30px;
+    padding: 30px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-family: l-bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #1A1D1F;
+  }
+
+  &__img {
+    align-self: center;
+    &-1 {
+      margin-top: 60px;
+      width: 540px;
+    }
+    &-2 {
+      margin-top: 130px;
+      width: 510px;
+    }
+  }
+}
+// ------------------- /M-USE --------------------
+
+// ------------------- M-INST --------------------
+.m-inst {
+  margin-bottom: 100px;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 740px;
+    margin-left: -230px
+  }
+
+  &__right {
+    max-width: 640px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__img {
+  }
+  &__list {
+    & ol {
+      counter-reset: myCounter;
+      padding: 0;
+      & li {
+        list-style: none;
+        font-size: 24px;
+        line-height: 29px;
+        font-family: reg;
+        position: relative;
+        padding-left: 90px;
+        // height: 70px;
+        &:not(:last-child) {
+          margin-bottom: 44px;
+        }
+        &::before {
+          counter-increment: myCounter;
+          content:counter(myCounter);
+          position: absolute;
+          left: 0;
+          top: 0;
+          // bottom: 0;
+          // margin: auto 0;
+          font-size: 30px;
+          line-height: 38px;
+          color: #FFFFFF;
+          font-family: l-bold;
+          width: 70px;
+          height: 70px;
+          background: #008452;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  &__links {
+    margin-top: 75px;
+    display: flex;
+  }
+
+  &__link {
+    border: none;
+    background: none;
+    padding: 0;
+    display: block;
+    width: fit-content;
+    &:first-child {
+      margin-right: 25px;
+    }
+  }
+}
+// ------------------- /M-INST --------------------
+
+// ------------------- M-PAY ---------------------
+.m-pay {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-1 {
+      max-width: 330px;
+    }
+    &-2 {
+      max-width: 436px;
+    }
+    &-3 {
+      max-width: 330px;
+    }
+  }
+
+  &__img {
+    height: 410px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+  &__text {
+    margin-top: 32px;
+    text-align: center;
+    max-width: 420px;
+  }
+  &__line {
+    position: absolute;
+  }
+  &__line-1 {
+    left: -40px;
+    bottom: 50px;
+  }
+
+  &__line-2 {
+    right: 70px;
+    top: 40px;
+  }
+
+  &__line-3 {
+    right: -15px;
+    bottom: 70px;
+  }
+}
+// ------------------- /M-PAY --------------------
+
+// ------------------- M-SAFE --------------------
+.m-safe {
+  margin-bottom: 100px;
+  &__wrap {
+    display: flex;
+    // align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  &__left {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    max-width: 574px;
+  }
+  &__right {
+    max-width: 740px;
+  }
+  &__title {
+    color: #0059A4;
+    position: relative;
+    margin-bottom: 70px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 335px;
+      height: 18px;
+      background: url(/img/line-2.svg) no-repeat;
+      background-size: 335px;
+    }
+  }
+
+  &__text {
+    & p {
+      line-height: 29px;
+    }
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+// ------------------- /M-SAFE --------------------
+
+// ------------------- M-ENJOY --------------------
+.m-enjoy {
+  margin-bottom: 100px;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  &__left {
+    max-width: 1280px;
+    margin-left: -660px;
+  }
+
+  &__right {
+    max-width: 666px;
+    position: absolute;
+    right: 0;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    max-width: 300px;
+    margin-bottom: 32px;
+  }
+
+  &__qr {
+    background: #FFFFFF;
+    box-shadow: 18px 20px 60px -3px rgba(89, 89, 89, 0.25);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 20px;
+    & img {
+      width: 266px;
+      height: 266px;
+    }
+  }
+}
+// ------------------- /M-ENJOY --------------------
+
+
+
+@import "mir-pay_media.scss";
