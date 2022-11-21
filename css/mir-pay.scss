@@ -82,7 +82,7 @@
         left: 0;
         width: 245px;
         height: 30px;
-        background: url('/img/line-1.svg') no-repeat;
+        background: url('../img/line-1.svg') no-repeat;
         background-size: 245px;
       }
     }
@@ -478,7 +478,7 @@
 
 // ------------------- M-INFO --------------------
 .m-info {
-
+  margin-bottom: 160px;
   &__wrap {
     display: grid;
     grid-template-columns: 510px 1fr;

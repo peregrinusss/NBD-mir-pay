@@ -80,7 +80,7 @@
   left: 0;
   width: 245px;
   height: 30px;
-  background: url("/img/line-1.svg") no-repeat;
+  background: url("../img/line-1.svg") no-repeat;
   background-size: 245px;
 }
 .m-intro__subtitle {
@@ -475,6 +475,9 @@
   height: 266px;
 }
 
+.m-info {
+  margin-bottom: 160px;
+}
 .m-info__wrap {
   display: -ms-grid;
   display: grid;
@@ -684,6 +687,9 @@
   .m-enjoy__qr img {
     width: 170px;
     height: 170px;
+  }
+  .m-info {
+    margin-bottom: 140px;
   }
   .m-info__left {
     max-width: 386px;
@@ -1084,6 +1090,9 @@
   }
   .m-enjoy__right {
     margin-top: -45px;
+  }
+  .m-info {
+    margin-bottom: 100px;
   }
   .m-info__title {
     text-align: left;
