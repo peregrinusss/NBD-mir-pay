@@ -59,6 +59,7 @@
   top: 0;
   right: -620px;
   max-width: 1350px;
+  height: 875px;
 }
 .m-intro__title {
   font-family: l-bold;
@@ -172,6 +173,7 @@
 }
 .m-app__left {
   max-width: 662px;
+  height: 653px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-left: -270px;
@@ -217,17 +219,17 @@
   color: #1A1D1F;
 }
 .m-use__img {
+  width: 100%;
+  max-width: 540px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 .m-use__img-1 {
   margin-top: 60px;
-  width: 540px;
 }
 .m-use__img-2 {
   margin-top: 130px;
-  width: 510px;
 }
 
 .m-inst {
@@ -246,6 +248,7 @@
 }
 .m-inst__left {
   max-width: 740px;
+  height: 740px;
   margin-left: -230px;
 }
 .m-inst__right {
@@ -401,6 +404,7 @@
 }
 .m-safe__right {
   max-width: 740px;
+  height: 766px;
 }
 .m-safe__title {
   color: #0059A4;
@@ -441,6 +445,7 @@
 }
 .m-enjoy__left {
   max-width: 1280px;
+  height: 830px;
   margin-left: -660px;
 }
 .m-enjoy__right {
@@ -470,6 +475,43 @@
   height: 266px;
 }
 
+.m-info__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 510px 80px 1fr;
+  grid-template-columns: 510px 1fr;
+  gap: 80px;
+}
+.m-info__left {
+  margin-top: 40px;
+}
+.m-info__title {
+  margin-bottom: 32px;
+}
+.m-info__text {
+  margin-bottom: 32px;
+}
+.m-info__btn {
+  background: none;
+  border: 1px solid #0059A4;
+  border-radius: 57px;
+  color: #0059A4;
+  font-family: reg;
+  padding: 28px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.m-info__btn svg {
+  margin-left: 8px;
+}
+
 @media screen and (max-width: 1529px) {
   .m-intro__right {
     right: -450px;
@@ -491,6 +533,7 @@
   }
   .m-intro__right {
     max-width: 935px;
+    height: 606px;
     right: -350px;
   }
   .m-intro__title {
@@ -531,6 +574,7 @@
   }
   .m-app__left {
     max-width: 457px;
+    height: 451px;
     margin-left: -100px;
   }
   .m-use {
@@ -543,6 +587,9 @@
     font-size: 26px;
     line-height: 31px;
   }
+  .m-use__img {
+    max-width: 438px;
+  }
   .m-use__img-1 {
     margin-top: 44px;
   }
@@ -554,6 +601,7 @@
   }
   .m-inst__left {
     max-width: 530px;
+    height: 530px;
     margin-left: -120px;
   }
   .m-inst__right {
@@ -603,6 +651,7 @@
   }
   .m-safe__right {
     max-width: 533px;
+    height: 552px;
   }
   .m-safe__left {
     max-width: 400px;
@@ -623,6 +672,7 @@
   }
   .m-enjoy__left {
     max-width: 960px;
+    height: 624px;
     margin-left: -400px;
   }
   .m-enjoy__right {
@@ -634,6 +684,14 @@
   .m-enjoy__qr img {
     width: 170px;
     height: 170px;
+  }
+  .m-info__left {
+    max-width: 386px;
+  }
+  .m-info__wrap {
+    -ms-grid-columns: 387px 55px 1fr;
+    grid-template-columns: 387px 1fr;
+    gap: 55px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -793,6 +851,7 @@
   .m-enjoy__left {
     margin-left: -180px;
     width: 1034px;
+    height: 672px;
     max-width: 1034px;
   }
   .m-enjoy__left img {
@@ -809,6 +868,15 @@
   }
   .m-enjoy__text {
     text-align: center;
+  }
+  .m-info__wrap {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .m-info__left {
+    margin-bottom: 50px;
+    max-width: 480px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -846,6 +914,7 @@
         -ms-grid-row-align: center;
         align-self: center;
     width: 700px;
+    height: 357px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1010,10 +1079,17 @@
   }
   .m-enjoy__left {
     max-width: 670px;
+    height: 436px;
     margin-left: -100px;
   }
   .m-enjoy__right {
     margin-top: -45px;
+  }
+  .m-info__title {
+    text-align: left;
+  }
+  .m-info__btn {
+    padding: 28px 15px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1031,6 +1107,9 @@
             column-gap: 40px;
     justify-items: center;
   }
+  .m-app__left {
+    height: auto;
+  }
   .m-inst__links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1044,6 +1123,12 @@
   .m-inst__link:first-child {
     margin-right: 0;
     margin-bottom: 25px;
+  }
+  .m-inst__left {
+    height: auto;
+  }
+  .m-safe__right {
+    height: auto;
   }
 }
 @media screen and (max-width: 414px) {

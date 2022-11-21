@@ -63,6 +63,7 @@
     top: 0;
     right: -620px;
     max-width: 1350px;
+    height: 875px;
   }
   &__title {
     font-family: l-bold;
@@ -175,6 +176,7 @@
 
   &__left {
     max-width: 662px;
+    height: 653px;
     flex-shrink: 0;
     margin-left: -270px;
   }
@@ -227,14 +229,14 @@
   }
 
   &__img {
+    width: 100%;
+    max-width: 540px;
     align-self: center;
     &-1 {
       margin-top: 60px;
-      width: 540px;
     }
     &-2 {
       margin-top: 130px;
-      width: 510px;
     }
   }
 }
@@ -251,6 +253,7 @@
 
   &__left {
     max-width: 740px;
+    height: 740px;
     margin-left: -230px
   }
 
@@ -386,7 +389,6 @@
   margin-bottom: 100px;
   &__wrap {
     display: flex;
-    // align-items: center;
     justify-content: flex-end;
     position: relative;
   }
@@ -396,9 +398,11 @@
     left: 0;
     top: 15%;
     max-width: 574px;
+
   }
   &__right {
     max-width: 740px;
+    height: 766px;
   }
   &__title {
     color: #0059A4;
@@ -439,6 +443,7 @@
 
   &__left {
     max-width: 1280px;
+    height: 830px;
     margin-left: -660px;
   }
 
@@ -470,6 +475,47 @@
   }
 }
 // ------------------- /M-ENJOY --------------------
+
+// ------------------- M-INFO --------------------
+.m-info {
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 510px 1fr;
+    gap: 80px;
+  }
+
+  &__left {
+    margin-top: 40px;
+  }
+
+  &__right {
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__text {
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    background: none;
+    border: 1px solid #0059A4;
+    border-radius: 57px;
+    color: #0059A4;
+    font-family: reg;
+    padding: 28px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & svg {
+      margin-left: 8px;
+    }
+  }
+}
+// ------------------- /M-INFO --------------------
+
 
 
 

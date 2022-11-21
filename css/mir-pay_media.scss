@@ -25,6 +25,7 @@
     }
     &__right {
       max-width: 935px;
+      height: 606px;
       right: -350px;
     }
     &__title {
@@ -69,6 +70,7 @@
     }
     &__left {
       max-width: 457px;
+      height: 451px;
       margin-left: -100px;
     }
   }
@@ -82,6 +84,7 @@
       line-height: 31px;
     }
     &__img {
+      max-width: 438px;
       &-1 {
         margin-top: 44px;
       }
@@ -94,6 +97,7 @@
     margin-bottom: 80px;
     &__left {
       max-width: 530px;
+      height: 530px;
       margin-left: -120px;
     }
     &__right {
@@ -151,6 +155,7 @@
     margin-bottom: 80px;
     &__right {
       max-width: 533px;
+      height: 552px;
     }
     &__left {
       max-width: 400px;
@@ -173,6 +178,7 @@
     margin-bottom: 80px;
     &__left {
       max-width: 960px;
+      height: 624px;
       margin-left: -400px;
     }
     &__right {
@@ -184,6 +190,15 @@
         width: 170px;
         height: 170px;
       }
+    }
+  }
+  .m-info {
+    &__left {
+      max-width: 386px;
+    }
+    &__wrap {
+      grid-template-columns: 387px 1fr;
+      gap: 55px;
     }
   }
 }
@@ -327,6 +342,7 @@
     &__left {
       margin-left: -180px;
       width: 1034px;
+      height: 672px;
       max-width: 1034px;
       & img {
         width: 100%;
@@ -340,6 +356,16 @@
     }
     &__text {
       text-align: center;
+    }
+  }
+  .m-info {
+    &__wrap {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    &__left {
+      margin-bottom: 50px;
+      max-width: 480px;
     }
   }
 }
@@ -375,6 +401,7 @@
       position: relative;
       align-self: center;
       width: 700px;
+      height: 357px;
       order: 1;
       margin-top: 10px;
     }
@@ -528,10 +555,19 @@
     margin-bottom: 100px;
     &__left {
       max-width: 670px;
+      height: 436px;
       margin-left: -100px;
     }
     &__right {
       margin-top: -45px;
+    }
+  }
+  .m-info {
+    &__title {
+      text-align: left;
+    }
+    &__btn {
+      padding: 28px 15px;
     }
   }
 }
@@ -549,6 +585,9 @@
       column-gap: 40px;
       justify-items: center;
     }
+    &__left {
+      height: auto;
+    }
   }
   .m-inst {
     &__links {
@@ -561,6 +600,14 @@
         margin-right: 0;
         margin-bottom: 25px;
       }
+    }
+    &__left {
+      height: auto;
+    }
+  }
+  .m-safe {
+    &__right {
+      height: auto;
     }
   }
 }
