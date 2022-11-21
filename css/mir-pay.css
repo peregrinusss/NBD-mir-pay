@@ -418,7 +418,7 @@
   left: 0;
   width: 335px;
   height: 18px;
-  background: url(/img/line-2.svg) no-repeat;
+  background: url("../img/line-2.svg") no-repeat;
   background-size: 335px;
 }
 .m-safe__text p {
@@ -485,9 +485,6 @@
   grid-template-columns: 510px 1fr;
   gap: 80px;
 }
-.m-info__left {
-  margin-top: 40px;
-}
 .m-info__title {
   margin-bottom: 32px;
 }
@@ -510,6 +507,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .m-info__btn svg {
   margin-left: 8px;
@@ -907,6 +907,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
   }
   .m-intro__wrap {
     -webkit-box-orient: vertical;
@@ -1082,8 +1083,8 @@
     background-size: 156px;
   }
   .m-enjoy {
-    margin-bottom: 100px;
     overflow: hidden;
+    margin-bottom: 0;
   }
   .m-enjoy__left {
     max-width: 670px;
@@ -1092,6 +1093,9 @@
   }
   .m-enjoy__right {
     margin-top: -45px;
+  }
+  .m-enjoy__qr {
+    margin-bottom: 100px;
   }
   .m-info {
     margin-bottom: 100px;
@@ -1151,5 +1155,8 @@
   }
   .m-use__text {
     font-size: 20px;
+  }
+  .m-info__btn {
+    font-size: 15px;
   }
 }
